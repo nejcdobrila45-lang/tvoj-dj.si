@@ -1,0 +1,85 @@
+.admin-login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.login-card{background:linear-gradient(165deg,var(--surface-2),var(--surface));border:1px solid var(--border);border-radius:24px;padding:38px;width:100%;max-width:380px}
+
+.admin-tabs{display:flex;gap:10px;margin-bottom:32px;border-bottom:1px solid var(--border);padding-bottom:0}
+.admin-tab{background:none;border:none;color:var(--muted);font-family:var(--body);font-size:15px;font-weight:600;padding:12px 4px;margin-right:20px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:.2s}
+.admin-tab:hover{color:var(--text)}
+.admin-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+.inq-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:14px}
+.inq-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:14px;flex-wrap:wrap}
+.inq-title{font-family:var(--display);font-size:18px;font-weight:700}
+.inq-date{font-size:12px;color:var(--muted-2)}
+.inq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}
+.inq-field .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);margin-bottom:3px}
+.inq-field .v{font-size:14px;color:var(--text)}
+.inq-msg{background:var(--bg-2);border-radius:10px;padding:12px 14px;font-size:14px;color:var(--muted);margin-top:6px}
+.inq-email{color:var(--accent);font-size:14px}
+.inq-empty{text-align:center;color:var(--muted);padding:60px 20px}
+/* DJ admin seznam */
+.dj-admin-head{margin-bottom:22px}
+.dj-admin-list{display:flex;flex-direction:column;gap:12px}
+.dj-admin-row{display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px}
+.dj-admin-thumb{width:56px;height:56px;border-radius:12px;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative}
+.dj-admin-thumb img{width:100%;height:100%;object-fit:cover}
+.dj-admin-thumb span{font-family:var(--display);font-weight:800;font-size:22px;color:rgba(255,255,255,.9)}
+.dj-admin-info{flex:1;min-width:0}
+.dj-admin-name{font-weight:600;font-size:16px;margin-bottom:2px}
+.dj-admin-genre{font-size:13px;color:var(--muted)}
+.dj-inactive{font-size:11px;color:var(--muted-2);background:var(--inset);padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.dj-admin-actions{display:flex;gap:8px;flex-shrink:0}
+.btn-mini{font-family:var(--body);font-size:13px;font-weight:500;padding:8px 14px;border-radius:10px;background:var(--inset);border:1px solid var(--border);color:var(--text);cursor:pointer;transition:.2s}
+.btn-mini:hover{border-color:var(--border-2)}
+.btn-mini.danger{color:#F08585}
+.btn-mini.danger:hover{background:rgba(239,68,68,.12);border-color:rgba(239,68,68,.4)}
+
+/* DJ forma */
+.dj-form{max-width:640px}
+.dj-form-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.dj-form-head h3{font-family:var(--display);font-size:22px;font-weight:700}
+.dj-form .fg{margin-bottom:16px}
+.hint{color:var(--muted-2);font-weight:400;font-size:12px}
+.cats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.cat-check{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text);cursor:pointer}
+.cat-check input{width:auto}
+.fg-row{display:flex;gap:20px;align-items:flex-start}
+
+/* gradient izbor */
+.grad-grid{display:flex;gap:10px;flex-wrap:wrap}
+.grad-swatch{width:46px;height:46px;border-radius:12px;cursor:pointer;border:2px solid transparent;position:relative;transition:.2s}
+.grad-swatch input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.grad-swatch.sel{border-color:#fff;box-shadow:0 0 0 2px var(--accent)}
+
+/* fotografije */
+.photo-grid{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.photo-item{width:90px;height:90px;border-radius:12px;overflow:hidden;position:relative;border:1px solid var(--border)}
+.photo-item img{width:100%;height:100%;object-fit:cover}
+.photo-remove{position:absolute;top:4px;right:4px;width:24px;height:24px;border-radius:50%;background:rgba(0,0,0,.65);border:none;color:#fff;font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.upload-btn{display:inline-flex;align-items:center;font-size:14px;font-weight:500;padding:11px 18px;border-radius:12px;background:var(--inset);border:1px dashed var(--border-2);color:var(--accent);cursor:pointer;transition:.2s}
+.upload-btn:hover{background:var(--surface-2)}
+.photo-count{font-size:12px;color:var(--muted-2);font-weight:600;margin-left:4px}
+.photo-main{position:absolute;bottom:5px;left:5px;font-size:10px;font-weight:600;background:var(--accent);color:#fff;padding:2px 8px;border-radius:6px}
+.photo-item.broken{background:var(--inset);display:flex;align-items:center;justify-content:center}
+.photo-item.broken img{display:none}
+.photo-item.broken::after{content:"slika ni vidna";font-size:11px;color:var(--muted-2);text-align:center;padding:6px}
+.upload-btn.loading{opacity:.55;pointer-events:none}
+.cat-check{-webkit-tap-highlight-color:transparent;user-select:none}
+
+/* Povpraševanja — lepši prikaz */
+.inq-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
+.inq-head-left .inq-title{font-family:var(--display);font-size:20px;font-weight:700;margin-bottom:3px}
+.inq-head-left .inq-sub{font-size:14px;color:var(--muted)}
+.inq-head-right{text-align:right;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.inq-status{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 12px;border-radius:999px}
+.inq-status.new{color:#22C55E;background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.35)}
+.inq-status.seen{color:var(--muted-2);background:var(--inset);border:1px solid var(--border)}
+.inq-date{font-size:13px;color:var(--muted-2);white-space:nowrap}
+.inq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;padding:18px 0;border-top:1px solid var(--border)}
+.inq-field .k,.inq-email-row .k,.inq-msg-wrap .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);margin-bottom:5px;font-weight:600}
+.inq-field .v{font-size:15px;color:var(--text);word-break:break-word}
+.inq-email-row{padding:14px 0 18px;border-bottom:1px solid var(--border)}
+.inq-email-link{font-size:15px;color:var(--accent);white-space:nowrap;display:inline-block}
+.inq-msg-wrap{margin-top:18px}
+.inq-msg{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;font-size:14.5px;color:var(--text);line-height:1.6}
+.inq-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.inq-actions .btn-mini{display:inline-flex;text-decoration:none}

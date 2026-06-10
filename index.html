@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tvoj-dj.si — Profesionalni DJ-ji za poroke, hotele in dogodke po Sloveniji</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0A12'/><text x='50' y='68' font-size='58' font-weight='800' fill='%23A855F7' text-anchor='middle' font-family='Arial'>dj</text></svg>">
+<meta name="description" content="Izkušene DJ-je povežemo z vašim prostorom, občinstvom in energijo večera. 100 % zagotovljen DJ za vaš dogodek. Odgovor v manj kot 2 urah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">tvoj<span class="a">-dj</span><span class="b">.si</span></a>
+    <div class="nav-links">
+      <a href="#djji">DJ-ji</a>
+      <a href="#kako">Kako deluje</a>
+      <a href="#faq">Pogosta vprašanja</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#povprasevanje" class="btn btn-primary">Pošlji povpraševanje</a>
+      <button class="menu-btn" aria-label="Meni" onclick="document.querySelector('.nav-links').scrollIntoView()">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <video autoplay muted loop playsinline poster="assets/media/dj.jpg">
+    <source src="assets/media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <span class="badge reveal d1"><span class="dot"></span>100 % zagotovljen DJ za vaš dogodek</span>
+    <h1 class="reveal d2">Profesionalni DJ-ji za rojstne dneve, žurke in <span class="grad">dogodke po Sloveniji</span></h1>
+    <p class="sub reveal d3">Izkušene DJ-je povežemo z vašim prostorom, občinstvom in energijo, ki jo želite skozi večer — da glasba teče gladko od prve pijače do zadnjega komada.</p>
+    <div class="hero-ctas reveal d4">
+      <a href="#povprasevanje" class="btn btn-primary btn-lg">Pošlji povpraševanje →</a>
+      <a href="#djji" class="btn btn-ghost btn-lg">Oglej si DJ-je</a>
+    </div>
+  </div>
+</header>
+
+<!-- KAKO DELUJE -->
+<section id="kako" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Kako deluje</div>
+      <h2>Od povpraševanja do plesišča v štirih korakih</h2>
+      <p>Brez loginov, brez ugibanja. Ti poveš kaj iščeš — mi uredimo ostalo.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-top"><span class="step-num">01</span><h3>Pošlji povpraševanje</h3></div>
+        <p>Izbereš mikrolokacijo, tip dogodka, zvrst glasbe in po želji ime DJ-ja. Zahteva pade direktno na naš email.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-top"><span class="step-num">02</span><h3>Preverimo razpoložljivost</h3></div>
+        <p>Aron osebno kontaktira DJ-ja. Če ni prost, ti predlagamo ustrezno zamenjavo — DJ-ja imaš zagotovljenega.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-top"><span class="step-num">03</span><h3>Potrdiš z avansom</h3></div>
+        <p>Dobiš potrdilo in Stripe račun za avans, ki zaklene tvoj termin. Varno plačilo, brez deljenja IBAN-a.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-top"><span class="step-num">04</span><h3>Uživaš</h3></div>
+        <p>Takoj po plačilu dobiš direktni kontakt DJ-ja. Ti se samo zabavaš — vse ostalo uredimo mi.</p>
+      </div>
+    </div>
+    <div class="steps-note">
+      <span class="ic">◆</span>
+      <span><b>Garantiramo, da boš dobil DJ-ja — 100 %.</b> Odzovemo se v manj kot 2 urah.</span>
+    </div>
+  </div>
+</section>
+
+<!-- POVPRAŠEVANJE -->
+<section id="povprasevanje" class="section-pad" style="padding-top:30px">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Povpraševanje</div>
+      <h2>Poišči svojega DJ-ja</h2>
+      <p>Izpolni spodnje podatke in oglasimo se ti v roku 2 ur.</p>
+    </div>
+    <div class="form-wrap">
+      <div class="form-card">
+        <div id="formFields">
+          <div class="form-grid">
+            <div class="fg">
+              <label>Mikrolokacija</label>
+              <select>
+                <option>Osrednjeslovenska (Ljubljana)</option>
+                <option>Obalno-kraška (Koper, Portorož)</option>
+                <option>Gorenjska (Kranj, Bled)</option>
+                <option>Savinjska (Celje, Velenje)</option>
+                <option>Podravska (Maribor, Ptuj)</option>
+                <option>Goriška (Nova Gorica)</option>
+                <option>Jugovzhodna Slovenija (Novo mesto)</option>
+                <option>Pomurska (Murska Sobota)</option>
+                <option>Primorsko-notranjska (Postojna)</option>
+                <option>Zasavska (Trbovlje)</option>
+                <option>Posavska (Krško, Brežice)</option>
+                <option>Koroška (Slovenj Gradec)</option>
+                <option>Cela Slovenija</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Tip dogodka</label>
+              <select><option>Poroka</option><option>Rojstni dan</option><option>Korporativni dogodek</option><option>Klubska noč</option><option>Zasebna zabava</option><option>Hotel / Resort</option></select>
+            </div>
+            <div class="fg">
+              <label>Zvrst glasbe</label>
+              <select>
+                <option>Balkan</option>
+                <option>Slovenska glasba / Narodno-zabavna</option>
+                <option>Pop / Komercialno</option>
+                <option>House / Tech house</option>
+                <option>Hip-hop / R&B / Trap</option>
+                <option>Latino / Reggaeton</option>
+                <option>Techno</option>
+                <option>EDM / Dance</option>
+                <option>Rock / Pop-rock</option>
+                <option>Evergreen / 80s, 90s</option>
+                <option>Open format / Mešano</option>
+                <option>Ni pomembno / Po dogovoru</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Ime DJ-ja <span style="color:var(--muted-2);font-weight:400">(neobvezno)</span></label>
+              <input type="text" placeholder="npr. DJ Aron">
+            </div>
+            <div class="fg">
+              <label>Datum dogodka</label>
+              <input type="date">
+            </div>
+            <div class="fg">
+              <label>Tvoj email</label>
+              <input type="email" placeholder="ime@email.com">
+            </div>
+            <div class="fg full">
+              <label>Sporočilo <span style="color:var(--muted-2);font-weight:400">(neobvezno)</span></label>
+              <textarea placeholder="Povej nam več o dogodku, številu gostov, vibu ..."></textarea>
+            </div>
+          </div>
+          <div class="form-footer">
+            <div class="trust"><span class="ic">🔒</span> Garantiramo razpoložljivost DJ-ja · Odgovor v &lt; 2 h</div>
+            <button class="btn btn-primary" onclick="submitForm()">Pošlji povpraševanje →</button>
+          </div>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="check">✓</div>
+          <h3>Hvala za povpraševanje!</h3>
+          <p>Oglasimo se ti na email v roku 2 ur z razpoložljivostjo in ponudbo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIJA DJ-jev -->
+<section id="djji" class="section-pad" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Naši DJ-ji</div>
+      <h2>Skrbno izbrana ekipa</h2>
+      <p>Vsak DJ je preverjen — glasbeno, tehnično in po vibru. Izberi po žanru ali tipu dogodka.</p>
+    </div>
+    <div class="filters">
+      <button class="chip active" data-f="all">Vse</button>
+      <button class="chip" data-f="balkan">Balkan</button>
+      <button class="chip" data-f="slovenska">Slovenska</button>
+      <button class="chip" data-f="pop">Pop / Komercialno</button>
+      <button class="chip" data-f="house">House</button>
+      <button class="chip" data-f="hiphop">Hip-hop / R&B</button>
+      <button class="chip" data-f="latino">Latino</button>
+      <button class="chip" data-f="techno">Techno</button>
+      <button class="chip" data-f="evergreen">Evergreen</button>
+    </div>
+    <div class="dj-grid" id="djGrid"></div>
+    <div class="djs-cta">
+      <a href="dj-ji.html" class="btn btn-ghost btn-lg">Poglej vse DJ-je →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRAVEGA DJ-JA NAJDEMO MI -->
+<section class="section-pad">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-img">
+        <span class="glow"></span>
+        <img src="assets/media/dj.jpg" alt="DJ-ka za Pioneer mešalno mizo pod modro in roza klubsko svetlobo">
+      </div>
+      <div class="split-text">
+        <div class="eyebrow">Zakaj mi</div>
+        <h2>Pravega DJ-ja najdemo mi. Zabavo uživaš ti.</h2>
+        <p>Ni ti treba poslušati demo posnetkov, loviti freelancerjev ali ugibati, ali oseba za mizo razume prostor. Vodimo selektivno ekipo DJ-jev in vsakega postavimo tja, kamor sodi — glasbeno, tehnično in po vibru.</p>
+        <ul class="checklist">
+          <li><span class="check-ic">✓</span><span>Skrbno izbrana ekipa, ne odprt imenik</span></li>
+          <li><span class="check-ic">✓</span><span>En kontakt od povpraševanja do dneva dogodka</span></li>
+          <li><span class="check-ic">✓</span><span>Rezervni DJ je vključen v naš model</span></li>
+          <li><span class="check-ic">✓</span><span>Ozvočenje in osvetlitev na voljo kot usklajen paket</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-pad" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Pogosta vprašanja</div>
+      <h2>Vse, kar te zanima</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq"><summary>Kaj če DJ na moj datum ni prost?<span class="plus">+</span></summary>
+        <div class="ans">Brez skrbi — če tvoj prvi izbor ni prost, ti predlagamo ustrezno zamenjavo iz naše ekipe, ki ustreza istemu vibu in žanru. Garantiramo, da boš dobil DJ-ja, 100 %.</div></details>
+      <details class="faq"><summary>Koliko stane?<span class="plus">+</span></summary>
+        <div class="ans">Cena je odvisna od tipa dogodka, trajanja, lokacije in izbranega DJ-ja. Povpraševanje je popolnoma brezplačno in te k ničemur ne zavezuje — pošljemo ti jasno ponudbo.</div></details>
+      <details class="faq"><summary>Kdaj dobim kontakt DJ-ja?<span class="plus">+</span></summary>
+        <div class="ans">Takoj po plačilu avansa. Avans zaklene tvoj termin, nato ti samodejno pošljemo direktni kontakt DJ-ja, ki te bo kontaktiral pred dogodkom za koordinacijo.</div></details>
+      <details class="faq"><summary>Je plačilo varno?<span class="plus">+</span></summary>
+        <div class="ans">Da. Plačilo poteka prek Stripe — varne, mednarodno priznane platforme. Ni ti treba deliti podatkov kartice z DJ-jem in ne potrebuješ IBAN-a.</div></details>
+      <details class="faq"><summary>Pokrivate vso Slovenijo?<span class="plus">+</span></summary>
+        <div class="ans">Da, organiziramo DJ-je po vsej Sloveniji. Še posebej dobro pokrivamo Obalo in Portorož, kjer smo doma.</div></details>
+      <details class="faq"><summary>Lahko dobim tudi ozvočenje in luči?<span class="plus">+</span></summary>
+        <div class="ans">Seveda. Ozvočenje in osvetlitev lahko vključimo kot usklajen paket, tako da je vse od zvoka do svetlobe iz ene roke in brez tehničnih zapletov.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section-pad" style="padding-bottom:30px">
+  <div class="final">
+    <video class="final-video" autoplay muted loop playsinline>
+      <source src="assets/media/hero.mp4" type="video/mp4">
+    </video>
+    <div class="final-inner">
+      <h2>Pripravljen na nepozaben večer?</h2>
+      <p>Povej nam za svoj dogodek in pravega DJ-ja imaš zagotovljenega. Odgovor v manj kot 2 urah.</p>
+      <a href="#povprasevanje" class="btn btn-primary btn-lg">Pošlji povpraševanje →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="logo">tvoj<span class="a">-dj</span><span class="b">.si</span></a>
+        <p>Povezujemo izkušene DJ-je z dogodki po vsej Sloveniji. Pravega DJ-ja najdemo mi — zabavo uživaš ti.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Povezave</h4>
+        <a href="#djji">DJ-ji</a>
+        <a href="#kako">Kako deluje</a>
+        <a href="#povprasevanje">Povpraševanje</a>
+        <a href="#faq">Pogosta vprašanja</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <a href="mailto:info@tvoj-dj.si"><span class="ic">✉</span>info@tvoj-dj.si</a>
+        <a href="tel:+38640735830"><span class="ic">☎</span>+386 40 735 830</a>
+        <span><span class="ic">📍</span>Portorož, Slovenija</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 tvoj-dj.si — Vse pravice pridržane.</span>
+      <span class="gorillas">Izdelava: <a href="https://www.websitegorillas.si/" target="_blank" rel="noopener"><b>Website Gorillas</b></a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- DJ MODAL -->
+<div class="modal-backdrop" id="djModal">
+  <div class="modal-card" id="djModalBody"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/djs.js"></script>
+<script src="assets/js/form.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vsi DJ-ji — tvoj-dj.si</title>
+<meta name="description" content="Pregled vseh DJ-jev na tvoj-dj.si. Filtriraj po zvrsti glasbe in poišči pravega DJ-ja za svoj dogodek.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0A12'/><text x='50' y='68' font-size='58' font-weight='800' fill='%23A855F7' text-anchor='middle' font-family='Arial'>dj</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav" class="scrolled">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">tvoj<span class="a">-dj</span><span class="b">.si</span></a>
+    <div class="nav-links">
+      <a href="index.html#kako">Kako deluje</a>
+      <a href="index.html#faq">Pogosta vprašanja</a>
+    </div>
+    <div class="nav-cta">
+      <a href="povprasevanje.html" class="btn btn-primary">Pošlji povpraševanje</a>
+    </div>
+  </div>
+</nav>
+
+<!-- VSI DJ-ji -->
+<section class="section-pad" style="padding-top:130px">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Naši DJ-ji</div>
+      <h2>Vsi naši DJ-ji</h2>
+      <p>Vsak DJ je preverjen — glasbeno, tehnično in po vibru. Filtriraj po zvrsti in poišči pravega zate.</p>
+    </div>
+    <div class="filters">
+      <button class="chip active" data-f="all">Vse</button>
+      <button class="chip" data-f="balkan">Balkan</button>
+      <button class="chip" data-f="slovenska">Slovenska</button>
+      <button class="chip" data-f="pop">Pop / Komercialno</button>
+      <button class="chip" data-f="house">House</button>
+      <button class="chip" data-f="hiphop">Hip-hop / R&B</button>
+      <button class="chip" data-f="latino">Latino</button>
+      <button class="chip" data-f="techno">Techno</button>
+      <button class="chip" data-f="evergreen">Evergreen</button>
+    </div>
+    <div class="dj-grid" id="djGridAll"></div>
+    <div class="djs-cta">
+      <a href="povprasevanje.html" class="btn btn-primary btn-lg">Pošlji povpraševanje →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo">tvoj<span class="a">-dj</span><span class="b">.si</span></a>
+        <p>Povezujemo izkušene DJ-je z dogodki po vsej Sloveniji. Pravega DJ-ja najdemo mi — zabavo uživaš ti.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Povezave</h4>
+        <a href="dj-ji.html">DJ-ji</a>
+        <a href="index.html#kako">Kako deluje</a>
+        <a href="povprasevanje.html">Povpraševanje</a>
+        <a href="index.html#faq">Pogosta vprašanja</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <a href="mailto:info@tvoj-dj.si"><span class="ic">✉</span>info@tvoj-dj.si</a>
+        <a href="tel:+38640735830"><span class="ic">☎</span>+386 40 735 830</a>
+        <span><span class="ic">📍</span>Portorož, Slovenija</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 tvoj-dj.si — Vse pravice pridržane.</span>
+      <span class="gorillas">Izdelava: <a href="https://www.websitegorillas.si/" target="_blank" rel="noopener"><b>Website Gorillas</b></a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- DJ MODAL -->
+<div class="modal-backdrop" id="djModal">
+  <div class="modal-card" id="djModalBody"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/djs.js"></script>
+<script>
+  renderDJs('djGridAll');
+  initFilters('djGridAll');
+</script>
+</body>
+</html>
